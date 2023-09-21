@@ -68,11 +68,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.MintCream;
-            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(245, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 35);
+            this.label2.Size = new System.Drawing.Size(89, 35);
             this.label2.TabIndex = 2;
             this.label2.Text = "Login";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -89,10 +89,11 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(188, 257);
+            this.txtPassword.Location = new System.Drawing.Point(188, 266);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(194, 27);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 

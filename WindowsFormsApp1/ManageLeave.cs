@@ -115,8 +115,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login lg = new Login();
-            lg.Show();
+            new AdminHome().Show();
         }
     }
 }

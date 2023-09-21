@@ -16,12 +16,12 @@ namespace WindowsFormsApp1
     public partial class EmpDetails : Form
     {
         readonly SqlConnection conn;
-        private int endEmpID;
+        private string endEmpID;
         DBConnection db2 = DBConnection.Instance;
         string delid;
         int DelId;
         
-        public EmpDetails(int endEmpID,string endUsername)
+        public EmpDetails(string endEmpID,string endUsername)
         {
             InitializeComponent();
             conn = db2.connect();
@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             Emptableleave(endEmpID);
         }
 
-        public void Emptableleave(int empid)
+        public void Emptableleave(string empid)
         {
             string sql = "select * from Leave where EmployeeID = '"+empid+"'";
             SqlCommand cmd = new SqlCommand(sql, conn);
@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            int EmpId = int.Parse(lblEmpid.Text);
+            string EmpId = lblEmpid.Text;
             string startdate = StartDate.Text;
             string enddate = EndDate.Text;
             string reason = txtReason.Text;
@@ -94,7 +94,7 @@ namespace WindowsFormsApp1
                 cmd.ExecuteNonQuery();
                 conn.Close();
                 MessageBox.Show("Withdraw successfull");
-                Emptableleave(Int32.Parse(lblEmpid.Text));
+                Emptableleave(lblEmpid.Text);
                 delid = "";
             }
             else
@@ -102,6 +102,11 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Please select Leave Application");
             }
             
+        }
+
+        private void EmpDetails_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

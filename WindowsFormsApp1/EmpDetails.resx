@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        6gAADuoBo4pjcQAAA9tJREFUaEPt2jmoFEkcx/Hnrhfqihd44S6rIngkYmpmokYrmpiKsQomJsYriJFg
+        IAoiKqiICrqgGOwaGIjrmXgHricaeOKt+/surx49Nb/p7urpmWFgf/DB53TVv6qcvn0DHczPckReyys5
+        PPhZX2W6PJTvET5jW99kp8SLCNjWN7kibhFgW9/kprhFgG19k/8X0s3MlmWDf7ZK1YX8KtSe+9/fOpSp
+        ckqykzouP0mc1IWMF2pl250Wxqw1i8VdF3BU4qQuhBquLWMydi1ZKlyd3UD4JnMkm5SF0Ne1CxibObSV
+        JZK3iGC5ZJOyEPq6dllvhLlUykx5Iq5wbL5kk7IQ+rp2sccyQ5Lyo5wXVzD2p8RJWQihhmsb+0t+kNLZ
+        LK5Q7LJMkzipC+FGklqufYy5lQpfH/ukK5J1UsaIS+pCCLWo6fpkMbdSd9C7xBXIOiHDpVWqLISMkDKL
+        YY65YaUfxHUOrkqrbyKk6kIItRnD9Q2YY+63slVcx4ACC6Qo7SyEMEbRPyhztRkmd8R1CrZJmbS7EPK7
+        uP7BbbFZJK5DwEE2UcqkjoVMkrfiagQLpSmbxDUOdkvZ1LEQwpiuRsCcm3JIXOOA2+uyqWshjOlqBMy5
+        KdfFNcZ7GSll87e4OmBb2YyWj+Lq4Jo0hAP9nbjG4Kqbku3i6oBtKcm74r8U5j4Uzt3cjrvG4KEnJZOF
+        s0pc55ZwEKckfuDK+iJcRIfC2cg1DPZJaqYIV+D7g/iZz1LD2G5OwVgZygRxjYID0qswtptT0LAQDqqv
+        4hqC5+dehbHdnPBZGu75OGA4cFxjsG/3Kozt5oQX0pSL4hqDlbP7dTucGPL2FObclD3iGgdrpNthTDeX
+        gDk3ZZ24xgHPIN0OY7q5BMy5KbMk71rC7tXRN4BRGIvrhJsL2OV4QWJzQVyn4KB0K0WnXebaMuvFdQr4
+        xlJuHquGMfL2DjDXluFW5bm4jsEjqf2dbCbUZgw3dsAcix63B7aI65x1SXjxXHeoSW03ZhZzLAwr/Udc
+        gSxux907rarhZULe7X/wQAq/jZBV4orEeKW6QtoNNZ6KGyP2myRlv7hCzjHhmT819KGvq+kwp+SMkxvi
+        CjqcZc4JFymuSa3CNtrQtujMlMUTbMOdbkr4TYUyx4vzTDjX/zGIn/nMtS3CHH6RtjJPqi6mDhzczKGW
+        sDsUvcbsBMbM200rhVPeXnEDdgJ3tqVPs1WyUu6JG7wOd4UxupJRslFa/U9vFRyHG4TaXQ+vYtbKGfkk
+        boJ56ENfajS81ulleBReLTvkrPBmn18445kC/MxnbKMNbWt6fB4Y+Bfbjs89YF/ergAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

@@ -34,15 +34,15 @@ namespace WindowsFormsApp1
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("select * from  Employee where Username='" + txtUsername.Text + "' and Password='" + txtPassword.Text + "'", conn);
+                SqlCommand cmd = new SqlCommand("select * from  EmployeeTable where EmpUName='" + txtUsername.Text + "' and EmpPwd='" + txtPassword.Text + "'", conn);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 da.Fill(ds);
                 int i = ds.Tables[0].Rows.Count;
                 if (i == 1)
                 {
-                    int EmpID = (int)ds.Tables[0].Rows[0]["EmployeeID"];
-                    string Username = (string)ds.Tables[0].Rows[0]["Username"];
+                    String EmpID = (string)ds.Tables[0].Rows[0]["EmpID"];
+                    string Username = (string)ds.Tables[0].Rows[0]["EmpName"];
 
                     EmpDetails ed = new EmpDetails(EmpID, Username);
                     this.Hide();
@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
                     int j = ds1.Tables[0].Rows.Count;
                     if (j == 1)
                     {
-                        new admin().Show();
+                        new AdminHome().Show();
                         this.Hide();
 
                     }

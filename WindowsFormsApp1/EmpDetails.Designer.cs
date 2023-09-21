@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmpDetails));
             this.lblEmployeeID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,13 +85,13 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(94, 715);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(94, 688);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 34);
+            this.button1.Size = new System.Drawing.Size(97, 61);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -119,7 +120,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(94, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 27);
+            this.label4.Size = new System.Drawing.Size(114, 26);
             this.label4.TabIndex = 6;
             this.label4.Text = "Start Date";
             // 
@@ -129,7 +130,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(582, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 27);
+            this.label5.Size = new System.Drawing.Size(106, 26);
             this.label5.TabIndex = 7;
             this.label5.Text = "End Date";
             // 
@@ -139,7 +140,7 @@
             this.label6.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(94, 163);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 27);
+            this.label6.Size = new System.Drawing.Size(90, 26);
             this.label6.TabIndex = 8;
             this.label6.Text = "Reason";
             // 
@@ -173,10 +174,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(416, 232);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(301, 40);
@@ -207,8 +208,8 @@
             // 
             // btn_withdraw
             // 
-            this.btn_withdraw.BackColor = System.Drawing.Color.Red;
-            this.btn_withdraw.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_withdraw.BackColor = System.Drawing.Color.Silver;
+            this.btn_withdraw.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn_withdraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_withdraw.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_withdraw.Location = new System.Drawing.Point(416, 712);
@@ -245,7 +246,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(3, 316);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1068, 5);
@@ -254,10 +255,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(444, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 33);
+            this.label1.Size = new System.Drawing.Size(234, 45);
             this.label1.TabIndex = 18;
             this.label1.Text = "Leave Apply";
             // 
@@ -265,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1071, 918);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -273,6 +274,7 @@
             this.Name = "EmpDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmpDetails";
+            this.Load += new System.EventHandler(this.EmpDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
