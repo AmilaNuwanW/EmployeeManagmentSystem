@@ -98,7 +98,7 @@ namespace WindowsFormsApp1
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hello, World!");
         }
     }
 }
