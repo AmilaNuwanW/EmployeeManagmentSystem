@@ -196,5 +196,31 @@ namespace WindowsFormsApp1
             new AdminHome().Show();
             this.Hide();
         }
+
+        private void DGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void DGV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                id.Text = DGV.SelectedRows[0].Cells["EmpID"].Value.ToString();
+                name.Text = DGV.SelectedRows[0].Cells["EmpName"].Value.ToString();
+                address.Text = DGV.SelectedRows[0].Cells["EmpAdd"].Value.ToString();
+                gender.Text = DGV.SelectedRows[0].Cells["EmpGen"].Value.ToString();
+                possition.Text = DGV.SelectedRows[0].Cells["EmpPos"].Value.ToString();
+                phoneNo.Text = DGV.SelectedRows[0].Cells["EmpPhone"].Value.ToString();
+                dob.Text = DGV.SelectedRows[0].Cells["EmpDOB"].Value.ToString();
+                username.Text = DGV.SelectedRows[0].Cells["EmpUName"].Value.ToString();
+                password.Text = DGV.SelectedRows[0].Cells["EmpPwd"].Value.ToString();
+            }
+        }
+
+        private void clearBtn_Click_1(object sender, EventArgs e)
+        {
+            clear();
+        }
     }
 }

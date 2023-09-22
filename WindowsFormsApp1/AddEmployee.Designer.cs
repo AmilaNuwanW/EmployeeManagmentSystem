@@ -36,7 +36,6 @@
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.dob = new System.Windows.Forms.DateTimePicker();
             this.password = new System.Windows.Forms.TextBox();
             this.username = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.clearBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             this.panel4.SuspendLayout();
@@ -83,8 +83,11 @@
             this.DGV.Name = "DGV";
             this.DGV.RowHeadersWidth = 51;
             this.DGV.RowTemplate.Height = 24;
+            this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV.Size = new System.Drawing.Size(867, 581);
             this.DGV.TabIndex = 3;
+            this.DGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellClick);
+            this.DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellContentClick_1);
             // 
             // panel4
             // 
@@ -159,16 +162,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(501, 511);
             this.panel2.TabIndex = 0;
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.Location = new System.Drawing.Point(406, 456);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(78, 32);
-            this.clearBtn.TabIndex = 19;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = true;
             // 
             // dob
             // 
@@ -356,6 +349,17 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // clearBtn
+            // 
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Location = new System.Drawing.Point(406, 456);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(78, 32);
+            this.clearBtn.TabIndex = 19;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click_1);
+            // 
             // AddEmp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,8 +410,8 @@
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.DateTimePicker dob;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.DataGridView DGV;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clearBtn;
     }
 }
